@@ -1,0 +1,41 @@
+.main{ 
+    margin-top:0;
+    width:100%;
+    height:auto;
+    background-color:  hsl(263, 29%, 32%);
+    display: flex;
+    flex-direction:column;
+    justify-content: start;
+    align-items: flex-start;
+    overflow: hidden;
+  
+}
+
+.head{ 
+    margin-left:10%;
+    color:white;
+    letter-spacing: 1px;
+    margin-top:2rem;
+    font-weight: 500;
+    font-size:2rem;
+}
+
+.content{ 
+    position: relative;
+    padding:15px 10%;
+    width:100%;
+    height:auto;
+    display: flex;
+   
+    
+   
+}
+
+
+@media only screen and (max-width:800px){
+    .content{
+        flex-direction:column;
+        align-items: center;
+
+    }
+}

@@ -1,0 +1,73 @@
+.form{
+    width:23%;
+    height:55vh;
+    border-radius:12px;
+    background-color:#4d4e53;
+    margin-right:3rem;
+    
+}
+
+.top{ 
+    display:flex;
+    height:10%;
+    width:100%;
+    
+
+}
+
+.logo{
+    width:20%;
+}
+
+.sep{ 
+    height:100%;
+    width:80%;
+    margin-top:0;
+    background-color: #1d1e22;
+    
+}
+
+.input{ 
+    background-color: transparent;
+    outline: none;
+    width:95%;
+    height:80%;
+    border:none;
+    overflow: hidden;
+    resize: none;
+}
+.code{ 
+    font-family: monospace;
+    margin-top:0.2rem;
+    margin-left:0.4rem;
+    color:rgb(73, 226, 73);
+    
+
+}
+
+.num{ 
+    color:rgb(212, 211, 211)
+}
+
+.curs{ 
+    animation-name:cursor;
+    animation-iteration-count: infinite;
+    animation-duration: 0.3s;
+
+}
+
+@keyframes cursor {
+    0%{ 
+        opacity:1;
+    }
+    100%{ 
+        opacity:0;
+    }
+    
+}
+@media only screen and (max-width:800px){
+    .form{ 
+        width:60%;
+        margin-top:2rem;
+    }
+}

@@ -1,0 +1,149 @@
+.main{
+    width:100%;
+    height:110vh;
+    display: flex;
+    top:0;
+    left:0;
+    margin-top:0;
+}
+
+.left{ 
+    width:35%; 
+    height:110vh;
+    margin-top:0;
+    background-color: hsl(316, 30%, 36%);
+}
+.left.new{ 
+    width:35%; 
+    height:110vh;
+    margin-top:0;
+    background-color: hsl(164, 61%, 65%);;
+}
+
+
+
+.right{ 
+    width:65%; 
+    height:110vh;
+    background-color: hsl(274, 4%, 16%);
+    margin-top:0;
+}
+
+.right.themed{ 
+    background-color: hsl(274, 4%, 16%);
+
+}
+
+.img{ 
+    top:20%;
+    width:30%;
+    left:15%;
+}
+
+.img_hovered{ 
+    top:20%;
+    width:30%;
+    left:15%;
+    animation-name: space;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+
+}
+
+.logo{
+    letter-spacing: 0.7px;
+    color:white;
+    margin-left:5rem;
+}
+.greetings{ 
+    color:white;
+    letter-spacing:1px;
+    font-size:3rem;
+    font-weight:500;
+    flex-wrap:wrap;
+    width:70%;
+    height:100%;
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:25%;
+    
+
+
+}
+.interact{
+    color:transparent;
+    -webkit-text-stroke: 0.4px white;
+    font-family:inherit;
+    font-size:3rem;
+    
+ 
+
+}
+
+.interact:hover{ 
+    color:white;
+    -webkit-text-stroke: 0px;
+}
+.hover{
+    position:absolute;
+    right:10%;
+    top:20%;
+    
+    width:17%;
+   
+    animation-name: hover;
+    animation-duration: 0.3s;
+    rotate:15deg;
+
+}
+.anime{
+    position: absolute;
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+   
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes hover {
+    0%{ 
+        width:3%;
+        rotate: -45deg;
+    }
+    50%{ 
+        width:12%;
+        rotate: 45deg;
+    }
+    100%{ 
+        width:17%;
+        rotate:15deg;
+    }
+    
+}
+
+@keyframes space {
+    0%{ 
+        top:15%
+    }
+    50%{ 
+        top:20%
+    }
+    100%{ 
+        top:15%
+    }
+    
+}
+
+
+@media only screen and (max-width:800px){
+
+    .left{ 
+        display:none;
+
+    }
+
+    .right{ 
+        width:100%;
+    }
+}
