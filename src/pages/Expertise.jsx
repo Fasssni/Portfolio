@@ -1,19 +1,80 @@
-import React from "react";
+import React, { useContext } from "react";
+import Svgs from "../assets/svgs";
 import { MyForm } from "../components/MyForm/MyForm";
 import cl from "./modules/Expertise.module.css"
+import css from "../assets/css.svg"
+import html from "../assets/html.svg"
+import js from "../assets/j.svg"
+import { useSelector } from "react-redux";
+
 
 
 export const Expertise=()=>{
 
-    return( 
-        <div className={cl.main}>
-            <h2 className={cl.head}>Expertice</h2>
+    const svg= new Svgs();
+
+
+    let key=0
+
+    const info=
+                       
+                       [ {main:[ 
+                                
+                                {tech:"JavaScript"}, 
+                                {tech:"React"}, 
+                                {tech:"Redux"},
+                                {tech:"TypeScript"},
+                                {tech:"Axios"},
+                                {tech:"REST-API"}
+                                ],
+                          color:"rgb(73, 226, 73", 
+                          before:"<body>",
+                          after:"</body>",
+                          svg:js,
+                          title:""
+
+                        }
+                        ,
+                          {main:[
+                            {tech:"HTML5"},
+                            {tech:"CSS3"}, 
+                            {tech:"Responsive coding"}, 
+                            {tech:"SCSS/SASS"},
+                            {tech:"CSS animations"}], 
+                            color:"yellow",
+                            before:"import React from'react'",
+                            after:"func()",
+                            svg:css,
+                            title:""
+                          },
+
+
+                         {main:[{tech:"Git"}, 
+                                {tech:"Figma"}, 
+                                {tech:"Python"}, 
+                                {tech:"English:fluent"},
+                                {tech:"Russian:fluent"}], 
+                                before:"git init",
+                                after:"git push",
+                                svg:html,
+                                title:"additional",
+                        
+                         color:"white"}]
+
+                        //  [{tech:"React",desc:"",color:"rgb(73, 226, 73)"}, {tech:"Redux", desc:"",color:"rgb(73, 226, 73)"}, {tech:"Router", desc:"",color:"rgb(73, 226, 73)"}, {tech:"Axios",desc:"",color:"rgb(73, 226, 73)"}]
+
+        const theme=useSelector(state=>state.theme.themed)
+  
+        return( 
+        <div className={theme?cl.main_themed:cl.main}>
+            <h2 className={cl.head} style={{color:theme?"black":"white"}}>Expertise</h2>
             
             <div className={cl.content}>
-                <MyForm></MyForm>
-                <MyForm></MyForm>
-                <MyForm></MyForm>
+                {info.map((p)=>
+                <MyForm key={key++} p={p}></MyForm>)}
+                
             </div>
+           
 
         </div>
     )

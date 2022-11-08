@@ -14,11 +14,19 @@
     width:60%;
     display: flex;
     justify-content: space-around;
+    color:white;
+}
+
+.ul_updated{ 
+    width:60%;
+    display: flex;
+    justify-content: space-around;
+    color:black;
 }
 
 .li{
     list-style:none;
-    color:white;
+    color:inherit;
     cursor:pointer;
     display: inline-block;
     position: relative;
@@ -29,7 +37,7 @@
     content: "~~~~~~~~~~~~";
     
     font-family: Times New Roman, Serif;
-    color: white;
+    color: inherit;
     font-size: 0.9em;
     font-weight: 700;
     width: 100%;
@@ -83,6 +91,11 @@
         
     }
     .ul{
+        justify-content: space-between;
+        width:100%;
+        
+    }
+    .ul_updated{
         justify-content: space-between;
         width:100%;
         

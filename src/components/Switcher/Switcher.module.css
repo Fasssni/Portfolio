@@ -65,7 +65,7 @@
     box-shadow: none;
   }
   
-  a {
+  .a {
     position: relative;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     top: 150px;
@@ -80,3 +80,4 @@
   a:hover {
     color: var(--link-hover);
   }
+

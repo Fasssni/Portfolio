@@ -38,7 +38,7 @@ export const NavBar=()=>{
      return( 
         <div className={cl.main}> 
     
-        <ul className={cl.ul}>
+        <ul className={theme?cl.ul_updated:cl.ul}>
             {menu.map((p)=>
             <li key={p.name} className={cl.li}>{p.name}</li> 
             )}

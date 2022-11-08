@@ -8,3 +8,10 @@
 body{ 
     font-family: 'League Gothic', sans-serif;
 }
+
+@media only screen and (max-width:800px) {
+    .App{ 
+        width:100%;
+    }
+    
+}
