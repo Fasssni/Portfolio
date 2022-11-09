@@ -201,10 +201,25 @@
     
 }
 @media only screen and (max-width:440px) {
-    .curve_box{
-        display:none;
+    .box{
+         display: flex;
+         flex-direction: column;
+         
     }
-
+    .call{ 
+        font-size:1rem;
+    }
+    .text2{ 
+        font-size:0.8rem;
+    }
+    .email{
+        font-size:0.7rem;
+    }
+    .curve_box{
+        margin-bottom: 10%;
+        height:50%;
+    }
     
+
     
 }
