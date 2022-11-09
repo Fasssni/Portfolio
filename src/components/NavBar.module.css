@@ -25,13 +25,22 @@
 }
 
 .li{
+    font-size:1.2rem;
     list-style:none;
     color:inherit;
     cursor:pointer;
     display: inline-block;
     position: relative;
+    text-decoration: none;
+    text-decoration-color: none;
+    outline: none;
+
 
 }
+.li:hover{
+    color:inherit;
+}
+
 
 .li:hover:before{
     content: "~~~~~~~~~~~~";

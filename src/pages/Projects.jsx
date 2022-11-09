@@ -5,9 +5,13 @@ import img1 from "../assets/auto.PNG"
 import img2 from  "../assets/port.PNG"
 import img3 from  "../assets/weather.PNG"
 import img4 from  "../assets/Coffee.PNG"
+import { useSelector } from "react-redux";
 
 
 const Projects=()=>{ 
+
+    const theme=useSelector(state=>state.theme.themed)
+
     const projects=[
                     {stack:["React","Redux","React Hooks","React-router", "Axios", "Node.js","Express","postgreSQL"],
                     link:"https://graceful-phoenix-e29f91.netlify.app/about",
@@ -40,15 +44,16 @@ const Projects=()=>{
     ]
 
     return( 
-        <div className={cl.main}>
+        <div className={cl.main} style={{background:theme?"hsl(55, 100%, 94%)":'hsl(257, 8%, 18%)'}}id="projects">
         <header>
-            <h2 className={cl.name} style={{color:"white"}}>Projects</h2>
+            <h2 className={cl.name} style={{color:theme?'hsl(257, 8%, 18%)':"white"}}>Projects</h2>
         </header>
         <div className={cl.projects}>
             { projects.map((p)=>
             <PForm p={p}></PForm>)
             }
         </div>
+        <div style={{height:"1px", width:"100%",marginBottom:"0"}} id="about"></div>
 
         </div>
     )

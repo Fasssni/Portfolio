@@ -2,7 +2,7 @@
     width:40%; 
     height: auto;
         
-    background-color: transparent;
+    background-color: hsl(257, 8%, 18%);
     opacity: 1;
     border-radius: 12px;
     border:1px solid white;
@@ -148,6 +148,9 @@
     .ul{ 
         height:15vh;
     }
+    .img{ 
+        height:30vh;
 
+    }
 
 }

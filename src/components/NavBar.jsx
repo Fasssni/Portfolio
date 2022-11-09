@@ -9,7 +9,7 @@ import img2 from "../assets/2023236.svg"
 
 export const NavBar=()=>{
 
-    const menu=[{name:" expertise",to:"#"},{name:" projects",to:"#"},{name:" about",to:"#"}]
+    const menu=[{name:"expertise",to:"#expertise"},{name:"projects",to:"#projects"},{name:" about",to:"#about"}]
     const dispatch=useDispatch()
 
     const theme=useSelector(state=>state.theme.themed)
@@ -40,7 +40,7 @@ export const NavBar=()=>{
     
         <ul className={theme?cl.ul_updated:cl.ul}>
             {menu.map((p)=>
-            <li key={p.name} className={cl.li}>{p.name}</li> 
+            <p key={p.name} ><a className={cl.li} href={p.to}>{p.name}</a></p> 
             )}
             <Switcher changeTheme={changeTheme}></Switcher>
             {/* <img src={img2} fill="orange" className={cl.sun}></img> */}

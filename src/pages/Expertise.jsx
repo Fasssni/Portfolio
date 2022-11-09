@@ -66,7 +66,7 @@ export const Expertise=()=>{
         const theme=useSelector(state=>state.theme.themed)
   
         return( 
-        <div className={theme?cl.main_themed:cl.main}>
+        <div className={theme?cl.main_themed:cl.main} id="expertise">
             <h2 className={cl.head} style={{color:theme?"black":"white"}}>Expertise</h2>
             
             <div className={cl.content}>

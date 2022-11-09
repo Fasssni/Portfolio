@@ -1,7 +1,8 @@
 .main{ 
     width:100%;
     height:auto;
-    background-color: hsl(257, 8%, 18%);
+    position: relative;
+    
     padding-top: 2rem;
 }
 
