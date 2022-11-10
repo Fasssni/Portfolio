@@ -8,15 +8,7 @@ import "./styles.css"
 
 function App() {
 
-  let dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-7704C0E390');
-
-
-
-   
-  gtag();
+  
 
   return (
     <div className="App">
