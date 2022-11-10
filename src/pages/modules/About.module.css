@@ -39,7 +39,7 @@
     align-items: center;
     overflow: hidden;
     margin-right:5%;
-    
+   
     
 }
 .pic{ 
@@ -120,8 +120,8 @@
     animation-duration: 3s;
     margin-top: 0.5rem;
     padding:5px 15px;
-    
-
+    position:absolute;
+    top:55%;
 }
 .clip_passive{
     display: none;
@@ -181,6 +181,10 @@
         
         
     }
+    .clip{ 
+        top:55%;
+        left:35%;
+    }
     
 }
 
@@ -199,6 +203,12 @@
         
         
     }
+    .clip{ 
+        top:48%;
+        left:15%;
+        
+    }
+    
     
 }
 @media only screen and (max-width:440px) {
@@ -211,13 +221,14 @@
         font-size:1rem;
     }
     .text2{ 
-        font-size:0.8rem;
+        font-size:1.1rem;
     }
     .email{
-        font-size:0.7rem;
+        font-size:1rem;
     }
     .curve_box{
-        margin-bottom: 10%;
+        
+        margin-bottom: 7%;
         height:50%;
     }
     
