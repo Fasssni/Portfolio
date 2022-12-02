@@ -4,7 +4,7 @@ import cl from "./modules/Projects.module.css"
 import img1 from "../assets/auto.PNG"
 import img2 from  "../assets/port.PNG"
 import img3 from  "../assets/weather.PNG"
-import img4 from  "../assets/Coffee.PNG"
+import img4 from  "../assets/note.PNG"
 import { useSelector } from "react-redux";
 
 
@@ -25,19 +25,19 @@ const Projects=()=>{
                     note:"",
                     img:img2},
 
+                    {stack:["React","React Hooks", "Firebase","Local Storage","Custom Hooks"],
+                    link:"https://wmanup.netlify.app",
+                    git:"https://github.com/Fasssni/ToDo-test",
+                    note:"",
+                    img:img4},
+
                     {stack:["React","React Hooks", "Axios", "REST-API"],
                     link:"https://vermillion-sundae-aa691c.netlify.app",
                     git:"https://github.com/Fasssni/Weather-App",
                     note:"",
                     img:img3},
 
-                    {stack:["HTML","CSS3","JavaScript"],
-                    link:"https://chipper-sundae-2be21a.netlify.app",
-                    git:"https://github.com/Fasssni/Simple-CofeeShop-page",
-                    note:"This page isn't responsive at all, that was my very first project. Stay sure I'll fix it!)",
-                    img:img4},
-
-                    
+                   
 
                     
 
