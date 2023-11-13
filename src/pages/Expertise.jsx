@@ -18,14 +18,13 @@ export const Expertise=()=>{
 
     const info=
                        
-                       [ {main:[ 
-                                
-                                {tech:"JavaScript"}, 
+                       [ {main:[  
                                 {tech:"React"}, 
                                 {tech:"Redux"},
                                 {tech:"TypeScript"},
                                 {tech:"Axios"},
-                                {tech:"REST-API"}
+                                {tech:"REST-API"},
+                                {tech:"SCSS/SASS"},
                                 ],
                           color:"rgb(73, 226, 73", 
                           before:"<body>",
@@ -36,11 +35,11 @@ export const Expertise=()=>{
                         }
                         ,
                           {main:[
-                            {tech:"HTML5"},
-                            {tech:"CSS3"}, 
-                            {tech:"Responsive coding"}, 
-                            {tech:"SCSS/SASS"},
-                            {tech:"CSS animations"}], 
+                            {tech:"Node.js"},
+                            {tech:"Express"}, 
+                            {tech:"SQL (Postgres)"}, 
+                            {tech:"Next.js"},
+                           ], 
                             color:"yellow",
                             before:"import React from'react'",
                             after:"func()",
